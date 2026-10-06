@@ -1,0 +1,101 @@
+/* SAHARA: warm, restrained typography. Load after the visual styles. */
+:root {
+  --font-sahara: "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
+  --font-sahara-accent: Georgia, "Times New Roman", serif;
+}
+
+body {
+  font-family: var(--font-sahara);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+button, input, select, textarea { font-family: var(--font-sahara); }
+h1, h2, h3 {
+  font-family: var(--font-sahara);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -.035em;
+  text-wrap: balance;
+}
+h2 { font-size: clamp(38px, 4.1vw, 56px); line-height: 1.12; }
+h3 { font-size: 28px; line-height: 1.2; letter-spacing: -.025em; }
+h2 em, h3 em { font-family: inherit; font-style: normal; font-weight: inherit; }
+
+.hero h1 {
+  font-size: clamp(72px, 6.5vw, 94px);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -.05em;
+  text-wrap: initial;
+}
+.hero h1 em {
+  font-family: var(--font-sahara-accent);
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -.055em;
+  color: #e5d3b6;
+}
+.hero-copy { font-size: 18px; line-height: 1.55; letter-spacing: -.015em; }
+.eyebrow { font-size: 12px; font-weight: 500; line-height: 1.5; letter-spacing: .1em; }
+.hero .eyebrow { font-size: 12px; letter-spacing: .13em; }
+.hero-bottom { font-size: 12px; letter-spacing: .025em; }
+.hero-bottom > span { letter-spacing: .16em; }
+
+.header nav, .button, .header .button.small, .text-link,
+.hero .button, .hero .text-link, .plan-card .text-link,
+.map-actions .button, .route-links, .route-links button, .route-links a,
+.scene-tabs button, .map-tabs button, .scene-tools, .scene-tools button {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -.01em;
+}
+.section-head > p { font-size: 16px; line-height: 1.6; }
+.scene-label { font-size: 11px; font-weight: 500; letter-spacing: .08em; }
+.scene-caption > span { font-size: 12px; letter-spacing: .06em; }
+.scene-caption h3 { font-size: 32px; font-weight: 400; letter-spacing: -.035em; }
+.scene-caption p { font-size: 14px; line-height: 1.55; }
+.hotspot { font-size: 13px; font-weight: 500; letter-spacing: -.015em; }
+.caption { font-size: 13px; line-height: 1.55; }
+.plan-card > span { font-size: 12px; font-weight: 500; letter-spacing: .07em; }
+.plan-card h3 { font-size: 30px; line-height: 1.15; font-weight: 400; }
+.plan-card p { font-size: 16px; line-height: 1.55; }
+.directions h3 { font-size: 30px; line-height: 1.2; font-weight: 400; }
+.directions > p, .faq-list p { font-size: 16px; line-height: 1.6; }
+.route-note { font-size: 12px; font-weight: 500; letter-spacing: .055em; }
+.faq h2 { font-size: clamp(36px, 3.4vw, 48px); line-height: 1.15; }
+.faq-list summary { font-size: 17px; font-weight: 500; letter-spacing: -.02em; }
+footer, footer .text-link { font-size: 14px; }
+dialog h2 { font-size: 34px; line-height: 1.15; }
+#booking-demo h3 { font-size: 25px; font-weight: 500; }
+
+@media (max-width: 760px) {
+  .hero h1 { font-size: clamp(36px, 10.3vw, 52px); line-height: 1.1; letter-spacing: -.04em; }
+  .hero h1 em { letter-spacing: -.055em; }
+  .hero-copy { font-size: 16px; line-height: 1.55; }
+  .hero .eyebrow { font-size: 11px; letter-spacing: .085em; }
+  .hero-bottom { font-size: 11px; }
+  h2 { font-size: clamp(36px, 9vw, 44px); line-height: 1.13; }
+  .section-head > p { font-size: 15px; }
+  .scene-label { font-size: 10px; letter-spacing: .05em; }
+  .scene-caption h3 { font-size: 28px; }
+  .scene-caption p { font-size: 14px; }
+  .hotspot { font-size: 12px; }
+  .scene-tabs button, .scene-tools, .scene-tools button { font-size: 13px; }
+  .plan-card h3 { font-size: 29px; }
+  .plan-card p { font-size: 15px; }
+  .directions h3 { font-size: 28px; }
+  .directions > p, .faq-list p { font-size: 15px; }
+  .faq h2 { font-size: 36px; }
+  .faq-list summary { font-size: 16px; }
+  dialog h2 { font-size: 30px; }
+  #booking-demo h3 { font-size: 24px; }
+}
+
+@media (max-width: 360px) {
+  .header .button.small { font-size: 13px; }
+  .scene-tabs button, .scene-tools, .scene-tools button { font-size: 12px; }
+}

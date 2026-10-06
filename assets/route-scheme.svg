@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" role="img" aria-labelledby="title desc">
+<title id="title">SAHARA — предварительная схема въезда</title><desc id="desc">Условный путь: к лесу, вдоль границы леса и к въезду SAHARA. Схема не повторяет точную геометрию дорог.</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="6" refY="4" orient="auto"><path d="M1 1 6 4 1 7" fill="none" stroke="#bd8d4d" stroke-width="1.8" stroke-linejoin="round"/></marker><pattern id="forest" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M0 31 31 0" stroke="#536147" stroke-width="1" opacity=".25"/></pattern></defs>
+<rect width="800" height="560" fill="#ece9df"/><path d="M0 0H800V176L630 184 460 170 270 186 0 166Z" fill="#d5ddca"/><path d="M0 0H800V176L630 184 460 170 270 186 0 166Z" fill="url(#forest)"/>
+<g font-family="Arial, sans-serif"><text x="48" y="57" font-size="14" letter-spacing="3" fill="#5a664e">ЛЕС</text><text x="48" y="88" font-size="16" fill="#68735d">Въезд с этой стороны участка</text>
+<path d="M-20 219H820" fill="none" stroke="#d0cfc5" stroke-width="44"/><path d="M-20 219H820" fill="none" stroke="#f8f6f0" stroke-width="36"/>
+<path d="M235 560V240" fill="none" stroke="#d0cfc5" stroke-width="44"/><path d="M235 560V239" fill="none" stroke="#f8f6f0" stroke-width="36"/>
+<path d="M34 410H690" fill="none" stroke="#d9d7cc" stroke-width="20"/>
+<g fill="#ddd9cc" stroke="#c8c4b6"><rect x="61" y="277" width="100" height="85" rx="5"/><rect x="305" y="285" width="119" height="75" rx="5"/><rect x="62" y="451" width="102" height="64" rx="5"/><rect x="306" y="454" width="99" height="61" rx="5"/><rect x="456" y="454" width="112" height="61" rx="5"/></g>
+<rect x="514" y="279" width="198" height="94" rx="7" fill="#324431"/><text x="613" y="318" text-anchor="middle" fill="#f3eddc" font-size="24" letter-spacing="3">SAHARA</text><text x="613" y="349" text-anchor="middle" fill="#d4dccb" font-size="16">Солнечная, 231</text>
+<path d="M235 499V249Q235 219 267 219H583Q613 219 613 248V280" fill="none" stroke="#fff8e5" stroke-width="13" stroke-linecap="round"/><path d="M235 499V249Q235 219 267 219H583Q613 219 613 248V276" fill="none" stroke="#bd8d4d" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 8" marker-end="url(#arrow)"/>
+<circle cx="235" cy="499" r="10" fill="#bd8d4d" stroke="#fff8e5" stroke-width="4"/>
+<g fill="#2e3d2d"><circle cx="177" cy="433" r="16"/><circle cx="381" cy="172" r="16"/><circle cx="672" cy="241" r="16"/></g>
+<g fill="#fff" font-size="15" text-anchor="middle"><text x="177" y="438">1</text><text x="381" y="177">2</text><text x="672" y="246">3</text></g>
+<text x="37" y="436" font-size="17" fill="#46533c">К лесу</text><text x="408" y="178" font-size="17" fill="#46533c">Вдоль леса</text><text x="698" y="246" font-size="17" fill="#46533c">Въезд</text>
+<text x="32" y="540" font-size="13" fill="#6a6f60">СХЕМА УСЛОВНАЯ · НЕ ДЛЯ ПОШАГОВОЙ НАВИГАЦИИ</text></g></svg>

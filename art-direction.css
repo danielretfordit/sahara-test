@@ -1,0 +1,88 @@
+/* SAHARA: generous imagery, restrained motion, a compact editorial sequence. */
+:root{--paper:#eee8dd;--ink:#151b15;--muted:#b0b4a6}
+body{background:#151b15}
+.header{background:linear-gradient(180deg,#0c140d55,transparent);border-bottom-color:#eee8dd24}
+.header.scrolled{background:#131c14ed;border-bottom-color:#eee8dd18;backdrop-filter:blur(20px)}
+.button{box-shadow:0 3px 18px #08110b10}
+.section{padding:88px 8%}
+.section-head{margin-bottom:34px}
+.hero{height:88svh;min-height:740px;max-height:940px}
+.hero-image{inset:-22px;background-position:center;filter:none}
+.hero-shade{background:linear-gradient(90deg,#08110985 0%,#09130b26 52%,transparent 85%),linear-gradient(0deg,#151b15ef 0%,transparent 24%,#11190f25 100%)}
+.hero-content{padding-top:130px;padding-bottom:110px}
+.hero-copy{color:#eee9df;text-shadow:0 2px 14px #05100550}
+.hero-bottom{bottom:30px;color:#e0dbcf}
+.hero .text-link{color:#f0e8d9;border-color:#f0e8d977}
+.space{background:#151b15;padding:80px 4% 72px}
+.space .section-head{padding:0 4.35%}
+.explorer{height:72svh;min-height:540px;max-height:760px;border-radius:3px;border:1px solid #b9b09726;box-shadow:0 22px 60px #00000025}
+.scene-vignette{background:linear-gradient(0deg,#0a120dda 0%,#0a120d35 27%,transparent 50%),linear-gradient(180deg,#0b100e45,transparent 22%)}
+.scene-caption{left:36px;bottom:31px}
+.scene-caption p{color:#e5e1d6}
+.scene-label{left:34px;top:29px;color:#f2ecdd}
+.scene-image[data-view=lounge]{background-size:cover;background-position:center 100%;inset:-38% -18px -18px}
+.explorer-controls{margin:24px 4.35% 0}
+.space>.caption{margin:18px 4.35% 0;color:#a6ad9e}
+.scene-tabs{border-color:#53604d;background:#232d22}
+.scene-tabs button[aria-pressed=true]{background:#e8dfcd}
+.hotspot{background:#1121159e;border-color:#eee5d18a;box-shadow:0 3px 18px #0000001c}
+.hotspot:hover{background:#554b36}
+.water-interlude{position:relative;height:340px;overflow:hidden;background:#1c2820;isolation:isolate}
+.water-interlude-image{position:absolute;inset:0;background:url('assets/water-macro.webp') center 54%/cover no-repeat}
+.water-interlude:after{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(0deg,#0b190fac,transparent 65%);pointer-events:none}
+.water-interlude-caption{position:absolute;z-index:1;left:8%;right:8%;bottom:30px;display:flex;justify-content:space-between;gap:24px;color:#f2ead9}
+.plan{background:#e9e3d7;color:#263022;padding-top:80px;padding-bottom:88px}
+.plan .section-head>p{color:#68705f}
+.plan-grid{gap:22px}
+.plan-card{position:relative;isolation:isolate;overflow:hidden;min-height:410px;padding:30px;border:1px solid #eee5d92b;border-radius:3px;background:#253124;color:#f6eee0;box-shadow:0 12px 30px #25291a12;justify-content:flex-end}
+.plan-card:before{content:"";position:absolute;inset:0;z-index:-2;background-position:center;background-size:cover;transition:transform .9s var(--ease)}
+.plan-card:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#12201524,transparent 22%,#1020151a 35%,#0b160dca 70%,#08140eed 100%)}
+.plan-card:nth-child(1):before{background-image:url('assets/stone.jpeg');background-position:center 54%}
+.plan-card:nth-child(2):before{background-image:url('assets/water.jpeg');background-position:60% center}
+.plan-card:nth-child(3):before{background-image:url('assets/lounge.jpeg');inset:-38% 0 0;background-position:center bottom}
+.plan-card>span{position:relative;top:auto;right:auto;margin-bottom:auto;color:#f5e4c5;text-shadow:0 1px 9px #0009}
+.plan-card h3{margin-top:100px;margin-bottom:12px}
+.plan-card p{color:#dddccf;margin-bottom:22px}
+.plan-card .text-link{margin-top:0;color:#f8efdf;border-color:#ddcfaa88}
+.visit{background:#f5f1e8;padding-top:88px;padding-bottom:88px}
+.visit-grid{gap:48px}
+.map-panel{background:#e3e7d9;border-color:#bfc7af;border-radius:3px;box-shadow:0 10px 30px #3b49300a}
+.map-tabs{background:#e9ecdf;border-color:#bac2ac}
+.route-note{background:#e8e5d5;color:#665b3b;border-color:#c6b991}
+.directions>p{color:#5e6b57}
+.directions address{color:#46563c}
+.faq{background:#182417;padding-top:72px;padding-bottom:72px}
+.faq-list details{border-color:#536046}
+.faq-list details:last-child{border-color:#536046}
+.faq-list p{color:#bcc3b2}
+footer{background:#182417;border-color:#49573e;padding-top:30px;padding-bottom:34px}
+@media(hover:hover) and (pointer:fine){.plan-card:hover:before{transform:scale(1.035)}}
+@media(max-width:1100px){.section{padding-left:6%;padding-right:6%}.space{padding-left:3%;padding-right:3%}.space .section-head{padding-left:3.2%;padding-right:3.2%}.explorer-controls{margin-left:3.2%;margin-right:3.2%}.space>.caption{margin-left:3.2%;margin-right:3.2%}.plan-grid{gap:16px}.plan-card{padding:25px;min-height:395px}.visit-grid{gap:30px}}
+@media(max-width:760px){
+  .section{padding:58px 6%}
+  .hero{height:88svh;min-height:670px;max-height:830px}
+  .hero-image{background-position:62% center}
+  .hero-shade{background:linear-gradient(90deg,#07110991,#08110c10 95%),linear-gradient(0deg,#151b15eb,transparent 28%,#11190f20)}
+  .hero-content{padding:116px 6% 98px}
+  .hero-bottom{bottom:27px}
+  .space{padding:58px 0 52px}
+  .space .section-head{padding:0 6%;margin-bottom:27px}
+  .explorer{height:62svh;min-height:450px;max-height:610px;border-radius:0;border-left:0;border-right:0}
+  .scene-caption{left:23px;bottom:27px}
+  .scene-label{left:21px;top:26px}
+  .explorer-controls{margin:22px 6% 0}
+  .space>.caption{margin:18px 6% 0}
+  .water-interlude{height:240px}
+  .water-interlude-image{background-position:56% center}
+  .water-interlude-caption{left:6%;right:6%;bottom:24px}
+  .plan-grid{gap:16px}
+  .plan-card{min-height:310px;padding:25px;border-radius:3px}
+  .plan-card>span{position:relative;top:auto;right:auto;margin-bottom:auto}
+  .plan-card h3{margin-top:80px;padding-right:0;margin-bottom:9px}
+  .plan-card p{margin-bottom:18px}
+  .plan-card:nth-child(3):before{inset:-38% 0 0;background-position:center bottom}
+  .visit-grid{gap:30px}
+  .faq{gap:27px}
+  footer{padding:28px 6%}
+}
+@media(prefers-reduced-motion:reduce){.plan-card:hover:before{transform:none}}
